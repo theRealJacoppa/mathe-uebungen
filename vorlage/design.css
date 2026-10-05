@@ -68,9 +68,11 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   background: #fff;
   border-bottom: 1px solid var(--linie);
 }
+/* Zeile 1: Titel. Zeile 2: links Level, rechts Fortschritt und Hilfe */
 .kopf h1 {
+  width: 100%;
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
 }
 .level-reihe {
   display: flex;
@@ -351,7 +353,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   html { font-size: 18px; }
   body { height: auto; min-height: 100%; }
   .kopf { padding: 0.6rem 16px; }
-  .kopf h1 { width: 100%; font-size: 1.4rem; }
+  .kopf h1 { font-size: 1.4rem; }
   .kopf-rechts { margin-left: 0; }
   .inhalt {
     grid-template-columns: minmax(0, 1fr);
