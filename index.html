@@ -9,10 +9,35 @@
 <body>
 <main class="start">
   <h1>Mathe üben</h1>
-  <div class="kacheln">
-    <a class="kachel" href="laengen/"><b>Längen umrechnen</b><span>mm · cm · dm · m · km</span></a>
-    <a class="kachel" href="gewichte/"><b>Gewichte umrechnen</b><span>mg · g · kg · t</span></a>
-  </div>
+  <div class="kacheln" id="kacheln"></div>
 </main>
+
+<script src="themen/liste.js"></script>
+<script>
+  // Jede Übung aus themen/liste.js laden und ihre Daten sammeln
+  window.KACHELN = [];
+  window.UEBUNGEN.forEach(function (id) {
+    document.write('<script src="themen/' + id + '.js"><\/script>' +
+                   '<script>KACHELN.push(window.THEMA);<\/script>');
+  });
+</script>
+<script>
+  // Kacheln zeichnen, jede in der Farbe ihrer Übung
+  KACHELN.forEach(function (t) {
+    var a = document.createElement("a");
+    a.className = "kachel";
+    a.href = t.id + "/";
+    if (t.farbe) a.style.setProperty("--akzent", t.farbe);
+    var b = document.createElement("b");
+    b.textContent = t.titel;
+    a.appendChild(b);
+    if (t.untertitel) {
+      var s = document.createElement("span");
+      s.textContent = t.untertitel;
+      a.appendChild(s);
+    }
+    document.getElementById("kacheln").appendChild(a);
+  });
+</script>
 </body>
 </html>

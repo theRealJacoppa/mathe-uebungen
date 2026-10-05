@@ -1,13 +1,17 @@
-/* Thema: Gewichte umrechnen
-   Nur Inhalt – Design und Ablauf kommen aus vorlage/. */
+/* Übung: Gewichte umrechnen
+   Alle Einstellungen erklärt: vorlage/thema-vorlage.js */
 window.THEMA = {
   id: "gewichte",
   titel: "Gewichte umrechnen",
+  untertitel: "mg · g · kg · t",
+  farbe: "#1F5FAD",
 
-  // Einheiten von klein nach groß
   einheiten: ["mg", "g", "kg", "t"],
-  // Umrechnungszahlen zwischen den Nachbarn: mg–g, g–kg, kg–t
   faktoren: [1000, 1000, 1000],
+
+  freischalten: true,
+  ziel: { anzahl: 10, art: "folge" },
+  hilfe: "an",
 
   level: [
     // 1: Eine Stufe zur kleineren Einheit (6 kg = ? g)
@@ -18,6 +22,6 @@ window.THEMA = {
     { typ: "eingabe", stufen: [2], richtung: "beide", grenze: 9000000 },
     // 4: Mehrfachauswahl, 1 oder 2 Antworten richtig
     //    (3 richtige bräuchten 1 t = 1 000 000 000 mg)
-    { typ: "auswahl", richtig: [1, 2], grenze: 9000000 }
+    { typ: "auswahl", optionen: 4, richtig: [1, 2], grenze: 9000000 }
   ]
 };
