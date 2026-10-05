@@ -55,6 +55,7 @@
 
   var AKZENT = T.farbe || "#0F6E56";
   var AKZENT_HELL = T.farbeHell || hellVon(AKZENT);
+  var AKZENT_SCHRIFT = T.farbeSchrift || AKZENT;   // Schrift in den Kästen der Grafik
   document.documentElement.style.setProperty("--akzent", AKZENT);
   document.documentElement.style.setProperty("--akzent-hell", AKZENT_HELL);
 
@@ -437,7 +438,7 @@
       '<g fill="none" stroke="#534AB7" stroke-width="4" marker-end="url(#spitzeLila)">' + oben + '</g>' +
       '<g fill="#534AB7" font-size="30"' + schrift + '>' + obenText + '</g>' +
       '<g fill="' + AKZENT_HELL + '" stroke="' + AKZENT + '" stroke-width="3">' + kaesten + '</g>' +
-      '<g fill="' + AKZENT + '" font-size="36"' + schrift + '>' + namen + '</g>' +
+      '<g fill="' + AKZENT_SCHRIFT + '" font-size="36"' + schrift + '>' + namen + '</g>' +
       '<g fill="none" stroke="#BA7517" stroke-width="4" marker-end="url(#spitzeOrange)">' + unten + '</g>' +
       '<g fill="#BA7517" font-size="30"' + schrift + '>' + untenText + '</g>' +
       '<line x1="' + p1 + '" y1="318" x2="' + p2 + '" y2="318" stroke="#5f5f5f" stroke-width="4" marker-end="url(#spitzeGrau)"/>' +

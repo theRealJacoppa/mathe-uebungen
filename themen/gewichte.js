@@ -4,8 +4,10 @@ window.THEMA = {
   id: "gewichte",
   titel: "Gewichte umrechnen",
   untertitel: "mg · g · kg · t",
-  farbe: "#0F6E56",
-  farbeHell: "#E1F5EE",
+  // Farben wie im Hefteintrag "Masse umrechnen"
+  farbe: "#993C1D",
+  farbeHell: "#FAECE7",
+  farbeSchrift: "#712B13",
 
   einheiten: ["mg", "g", "kg", "t"],
   faktoren: [1000, 1000, 1000],

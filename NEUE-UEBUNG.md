@@ -30,7 +30,7 @@ Claude liest dann automatisch `CLAUDE.md` und diese Anleitung.
 | Einstellung | Bedeutung |
 |---|---|
 | `titel`, `untertitel` | Überschrift und Zeile auf der Kachel |
-| `farbe` | Akzentfarbe der Übung (jede Übung eine eigene) |
+| `farbe`, `farbeHell`, `farbeSchrift` | Farben der Übung; gibt es einen Hefteintrag (PDF), die Farben von dort übernehmen |
 | `einheiten`, `faktoren` | Inhalt zum Umrechnen; die Grafik entsteht daraus automatisch |
 | `grenze`, `zahlenBis` | Wie groß die Zahlen werden |
 | `merksatz`, `grafik`, `hilfe` | Hilfe anpassen, ausblenden oder pro Level verstecken |

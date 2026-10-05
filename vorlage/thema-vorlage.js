@@ -15,7 +15,9 @@ window.THEMA = {
   // Akzentfarbe der Übung: Knöpfe, Kästen, Punkte, Lob.
   // Jede Übung bekommt eine eigene Farbe. Dunkel genug für weiße Schrift.
   farbe: "#0F6E56",
-  // farbeHell: "#E1F5EE",        // optional; sonst automatisch aus "farbe"
+  // farbeHell: "#E1F5EE",        // optional: Füllung der Kästen; sonst automatisch aus "farbe"
+  // farbeSchrift: "#0B5241",     // optional: Schrift in den Kästen der Grafik; sonst "farbe"
+  // Passt die Übung zu einem Hefteintrag, die Farben von dort übernehmen.
 
   // ---------- Inhalt (für Aufgaben zum Umrechnen) ----------
 
