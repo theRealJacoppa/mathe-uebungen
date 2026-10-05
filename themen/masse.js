@@ -1,8 +1,8 @@
-/* Übung: Gewichte umrechnen
+/* Übung: Masse umrechnen
    Alle Einstellungen erklärt: vorlage/thema-vorlage.js */
 window.THEMA = {
-  id: "gewichte",
-  titel: "Gewichte umrechnen",
+  id: "masse",
+  titel: "Masse umrechnen",
   untertitel: "mg · g · kg · t",
   // Farben wie im Hefteintrag "Masse umrechnen"
   farbe: "#993C1D",

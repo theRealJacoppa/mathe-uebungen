@@ -2,5 +2,5 @@
    Neue Übung: ihre id hier ergänzen. */
 window.UEBUNGEN = [
   "laengen",
-  "gewichte"
+  "masse"
 ];
